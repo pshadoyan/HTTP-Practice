@@ -1,0 +1,103 @@
+*:not(.background) {
+  z-index: 1
+}
+
+html, body {
+  margin: 0;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  /*background-image: url('Resources/back.png');*/
+  background-color: #16a085;
+  color: black;
+  height: 100%
+}
+
+body {
+  margin: 0 10px 10px 10px;
+}
+
+.practice {
+  display: flex;
+  flex-direction: column;
+  height: 100%
+}
+
+.practice header {
+  color: white;
+  font-weight: bold;
+  font-size: 96px;
+  text-shadow: 6px 6px #2f2205;
+  border-bottom: 5px solid white;
+  margin: auto;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 10px;
+  background-color: gray;
+  border-bottom: 2px solid white;
+}
+#nav a {
+  text-decoration: none;
+  font-weight: lighter;
+  padding: 10px 10px 5px 10px;
+  color: white;
+}
+#nav a:hover {
+  color: black;
+  background-color: white;
+}
+#nav a:active {
+  color: black;
+  background-color: white;
+  transform: scale(0.9);
+}
+.practice #director {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.information {
+  height: 100%;
+  color: black;
+}
+.information #projects {
+  height: 75%;
+  background-color: #1cc6a4;
+}
+.information #footer {
+  height: 25%;
+  background-color: lightgray;
+  margin: 10px 0 10px 0;
+}
